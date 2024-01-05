@@ -1,0 +1,19 @@
+﻿@model ProductCatalog.Models.Article
+
+@{
+    ViewData["Title"] = "Article Details";
+}
+
+<h2>@Model.Title</h2>
+
+<div>
+    <p>Genre: @Model.Genre</p>
+    <p>Publication Year: @Model.PublicationYear</p>
+    <p>View Count: @Model.ViewCount</p>
+    <p>Content Text: @Model.ContentText</p>
+    <p>Author: @Model.Author</p>
+</div>
+
+<!-- Add view counter logic here -->
+
+<a href="@Url.Action("MyArticles", "User", new { articleType = Model.ArticleType })" class="btn btn-secondary">Back to List</a>

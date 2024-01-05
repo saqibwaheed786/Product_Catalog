@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ProductCatalog.Models.Article>
+
+@{
+    ViewData["Title"] = "CD Articles";
+}
+
+<h2>CD Articles</h2>
+@if (Model != null && Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Publication Year</th>
+                <th>View Count</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var article in Model)
+            {
+                <tr>
+                    <td>@article.Title</td>
+                    <td>@article.Genre</td>
+                    <td>@article.PublicationYear</td>
+                    <td>@article.ViewCount</td>
+                    <td>
+                        <a href="@Url.Action("EditArticle", "Article", new { articleId = article.ArticleId })" class="btn btn-warning">Edit</a>
+                        <a href="@Url.Action("ShowArticle", "Article", new { articleId = article.ArticleId })" class="btn btn-info">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a href="@Url.Action("CreateArticle", "Article")" class="btn btn-success">Create New Article</a>
+}
+else
+{
+    <p>No CD articles available.</p>
+    <a href="@Url.Action("CreateArticle", "Article")" class="btn btn-success">Create New Article</a>
+}
