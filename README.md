@@ -1,6 +1,6 @@
 # ProductCatalog
-1 – Locate the Product Catalog compressed file.
-2 – Extract the project file to your desired location.
+– Locate the Product Catalog compressed file.
+– Extract the project file to your desired location.
 3 – Open the Extracted project folder and locate file with .sln extension and double click to open it in visual studio.
 4 – Once the project is loaded click on 
 Tools > NuGet Package Manager > Package manager Console.
