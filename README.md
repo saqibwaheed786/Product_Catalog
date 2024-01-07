@@ -14,8 +14,8 @@ Click on small down arrow select box near green play button >  <br>
 Note: You have to choose the browser only first time running the project. <br>
 If you want to run the project again on same pc you can skip the step 6.  <br>
 7 – Click on the button IIS Express with green play button to run the project.
-Project will be launched in the browser you selected in step 6.
-Note:
-Project Target framework .NET6.0
-Login: msell
+Project will be launched in the browser you selected in step 6.<br>
+Note:<br>
+Project Target framework .NET6.0<br>
+Login: msell<br>
 Password: top seller (with space)
